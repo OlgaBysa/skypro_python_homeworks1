@@ -5,17 +5,17 @@ utils = StringUtils()
 
 #    ***capitalize***
 
-def test_capitalize():
-         #  ***positive***
-   assert utils.capitilize("мама") =="Мама"
-   assert utils.capitilize("доброе утро") =="Доброе утро"
-   assert utils.capitilize("567") =="567"
-        #  ***negative***
-   assert utils.capitilize("") ==""
-   assert utils.capitilize(" ") ==" "
+@pytest.mark.parametrize('input_string, expected_output',[
+    ("мама", "Мама"),
+    ("доброе утро", "Доброе утро"),
+    ("567","567"),
+    ("", ""),
+    (" "," ")
+])
+def test_capitalize(input_string, expected_output):
+    assert utils.capitilize(input_string) == expected_output
    
-         
-    #  ***trim***
+   #  ***trim***
 
 def test_trim():
 ##    ***positive***
@@ -24,6 +24,11 @@ def test_trim():
    assert utils.trim(" SKY ") =="SKY "
     #  ***negative***
    assert utils.trim("") == ""
+
+@pytest.mark.xfail()      
+def test_greeting():
+    assert"доброе утро" =="Доброе утро"
+
 @pytest.mark.xfail()
 def tes_trim_with_spaces_output():
    assert utils.trim(" SKY ") == " SKY "
