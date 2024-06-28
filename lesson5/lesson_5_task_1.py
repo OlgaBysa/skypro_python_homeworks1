@@ -18,13 +18,17 @@ firefox.get("http://the-internet.herokuapp.com/add_remove_elements/")
 
 for _ in range(5):
 
-        add_button = chrome.find_element(
+        chrome.find_element(
             By.XPATH, '//button[text() = "Add Element"]').click()
         
-        add_button = firefox.find_element(
+        firefox.find_element(
             By.XPATH, '//button[text() = "Add Element"]').click()
         
-        sleep(5)
+        print(f"Клик выполнен ({_ + 1}/3)")
+        
+        
+        
+        
 
     #Соберите со страницы список кнопок Delete.
 

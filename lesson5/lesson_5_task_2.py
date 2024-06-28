@@ -38,8 +38,10 @@ try:
     
     blue_button = firefox.find_element(
     "xpath", '//button[text() = "Button with Dynamic ID"]').click()
+    print(f"Клик выполнен ({_ + 1}/3)")
+
     count = count + 1
-    sleep(2)
+    
     print(count)
 except Exception as ex:
     print(ex)
