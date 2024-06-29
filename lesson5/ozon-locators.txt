@@ -1,0 +1,5 @@
+Локатор кнопки Войти - (#stickyHeader > div > div.d7g_9 > div.caj1_47 > div > div > svg)
+Локатор кнопки Заказы - (#stickyHeader > div > div.d7g_9 > div.d405-a.sf4_14 > a > svg)
+Локатор ссылки OZON Job (в футере) - (#layoutPage > div.b3 > div.vd4_9 > div > div > div:nth-child(7) > div > footer > div > div.df2_9 > a > img)
+Локатор выбора валюты (верхний левый угол страницы) - <('[data-widget="selectedCurrency"]')>
+Локатор выпадашки Везде (в поисковой строке) - <('[title="Везде"]')>
