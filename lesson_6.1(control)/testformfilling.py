@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
-import time
+
 
 @pytest.fixture
 def browser():
@@ -46,7 +46,7 @@ def test_fill_form(browser):
     submit_button = browser.find_element_by_id("submit")
     submit_button.click()
 
-    time.sleep(2)  # Даем время для обработки данных
+    
 
     # Проверка подсветки полей
     zip_code = browser.find_element_by_id("zip-code")
