@@ -31,17 +31,3 @@ def test_calculator_from(chrome_browser):
     assert result_text == "15"
 
    
-
-# def test_calculator_from(chrom_browser):
-#     chrome_browser.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
-    
-#     delay_input.clear()
-#     delay_input.send_keys(45)
-#     chrom_browser.find_element(By.XPATH, "//span[text() = '7']").click()
-#     chrom_browser.find_element(By.XPATH, "//span[text() = '+']").click()
-#     chrom_browser.find_element(By.XPATH, "//span[text() = '8']").click()
-#     chrom_browser.find_element(By.XPATH, "//span[text() = '=']").click()
-    
-#     WebDriverWait(chrom_browser,46).until(EC.text_to_be_present_in_element((By.CLASS_NAME, "screen"), "15"))
-#     result_text = chrom_browser.find_element(By.CLASS_NAME, "screen").text
-#     assert result_text == "15"
