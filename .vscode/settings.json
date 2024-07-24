@@ -1,6 +1,10 @@
 {
     "python.testing.pytestArgs": [
+      lesson6.1
         "lesson_6.1(control)"
+
+        "."
+ main
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
